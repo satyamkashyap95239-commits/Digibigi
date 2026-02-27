@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --light: #f1f5f9;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      padding: 20px 8%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 20px;
+      color: var(--primary);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-photo {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .about-photo img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+    }
+
+    .about-text {
+      flex: 2 1 400px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill {
+      background: var(--white);
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    .card {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card span {
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    .card p {
+      margin-top: 10px;
+      color: var(--gray);
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--white);
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      section {
+        padding: 40px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>Your Name</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="about-container">
+    <div class="about-photo">
+      <img src="https://via.placeholder.com/200" alt="Profile Photo Placeholder">
+    </div>
+    <div class="about-text">
+      <p>
+        Replace this paragraph with your resume summary. Briefly introduce yourself,
+        your background, core expertise, and career goals. Highlight your strengths
+        and what makes you unique as a professional.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">Skill 1</div>
+    <div class="skill">Skill 2</div>
+    <div class="skill">Skill 3</div>
+    <div class="skill">Skill 4</div>
+    <div class="skill">Skill 5</div>
+    <div class="skill">Skill 6</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Job Title – Company Name</h3>
+    <span>Start Date – End Date</span>
+    <p>
+      Describe your responsibilities, key achievements, tools used,
+      and measurable impact in this role.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Previous Role – Company Name</h3>
+    <span>Start Date – End Date</span>
+    <p>
+      Highlight important contributions, leadership, teamwork,
+      and technical or professional growth.
+    </p>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Project Title</h3>
+    <p>
+      Short description of the project, technologies used,
+      your role, and the outcome.
+    </p>
+    <p>
+      <a href="#">Live Demo</a> |
+      <a href="#">Source Code</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Another Project</h3>
+    <p>
+      Explain the purpose of the project and the value it provides.
+    </p>
+    <p>
+      <a href="#">Live Demo</a> |
+      <a href="#">Source Code</a>
+    </p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <p>Phone: +91-XXXXXXXXXX</p>
+
+  <div class="contact-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Twitter</a>
+    <a href="#">Portfolio</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Name. All Rights Reserved.
+</footer>
+
+</body>
+</html>
